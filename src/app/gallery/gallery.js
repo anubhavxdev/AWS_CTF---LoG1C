@@ -13,7 +13,7 @@ export function DraggableCardDemo() {
       className: "absolute top-10 left-[20%] rotate-[-5deg]",
     },
     {
-      title: "LoG1C",
+      title: "Viper",
       image:
         "https://media.licdn.com/dms/image/v2/D5603AQGYCOMrO__HwQ/profile-displayphoto-crop_800_800/B56ZgndXj7HMAM-/0/1753008668969?e=1759363200&v=beta&t=VC8K3Z8d_QXB0lOjx26fyg_d-o1zhsH6j3hveFVdGyc",
       className: "absolute top-40 left-[25%] rotate-[-7deg]",
@@ -43,7 +43,7 @@ export function DraggableCardDemo() {
       className: "absolute top-24 left-[45%] rotate-[-7deg]",
     },
     {
-      title: "Logic_Kahaan_Hai",
+      title: "Logic",
       image:
         "https://avatars.githubusercontent.com/u/90065566?v=4",
       className: "absolute top-8 left-[30%] rotate-[4deg]",
