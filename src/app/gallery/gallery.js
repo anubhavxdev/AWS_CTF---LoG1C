@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 import {
   DraggableCardBody,
   DraggableCardContainer,
@@ -13,7 +14,7 @@ export function DraggableCardDemo() {
       className: "absolute top-10 left-[20%] rotate-[-5deg]",
     },
     {
-      title: "Viper",
+      title: "V1per",
       image:
         "https://media.licdn.com/dms/image/v2/D5603AQGYCOMrO__HwQ/profile-displayphoto-crop_800_800/B56ZgndXj7HMAM-/0/1753008668969?e=1759363200&v=beta&t=VC8K3Z8d_QXB0lOjx26fyg_d-o1zhsH6j3hveFVdGyc",
       className: "absolute top-40 left-[25%] rotate-[-7deg]",
@@ -61,11 +62,13 @@ export function DraggableCardDemo() {
                   who built the challenges <br />
                   and made this event possible.<br />
               </p>
-              {items.map((item) => (
-                  <DraggableCardBody className={item.className}>
-                      <img
+              {items.map((item, index) => (
+                  <DraggableCardBody key={`gallery-item-${index}`} className={item.className}>
+                      <Image
                           src={item.image}
                           alt={item.title}
+                          width={320}
+                          height={320}
                           className="pointer-events-none relative z-10 h-80 w-80 object-cover" />
                       <h3
                           className="mt-4 text-center text-2xl font-bold text-neutral-700 dark:text-neutral-300">

@@ -4,6 +4,7 @@ import logo from "../../../public/logo 2.png";
 import { ColourfulText } from "../components/ui/colourful-text";
 import { motion } from "framer-motion";
 import React from "react";
+import { FloatingDock } from "../components/ui/floating-dock";
 
 import {
   IconBrandGithub,
@@ -42,11 +43,14 @@ export function FloatingDockDemo() {
     {
       title: "Aceternity UI",
       icon: (
-        <img
-          src="https://assets.aceternity.com/logo-dark.png"
-          width={20}
-          height={20}
-          alt="Aceternity Logo" />
+        <div className="h-5 w-5 relative">
+          <Image
+            src="https://assets.aceternity.com/logo-dark.png"
+            fill
+            alt="Aceternity Logo"
+            className="object-contain"
+          />
+        </div>
       ),
       href: "#",
     },

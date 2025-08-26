@@ -2,6 +2,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { Linkedin, Github } from "lucide-react";
+import Image from "next/image";
 
 const organizers = [
   {
@@ -12,7 +13,7 @@ const organizers = [
     github: "#",
   },
   {
-    name: "LoG1C",
+    name: "V1per",
     role: "Developer",
     img: "https://media.licdn.com/dms/image/v2/D5603AQGYCOMrO__HwQ/profile-displayphoto-crop_800_800/B56ZgndXj7HMAM-/0/1753008668969?e=1759363200&v=beta&t=VC8K3Z8d_QXB0lOjx26fyg_d-o1zhsH6j3hveFVdGyc",
     linkedin: "#",
@@ -87,9 +88,11 @@ export default function Organizers() {
               className="relative group rounded-3xl bg-gradient-to-br from-zinc-800/40 to-zinc-700/20 border border-teal-400/20 p-8 backdrop-blur-xl hover:shadow-[0_0_30px_#00f5f5] hover:border-teal-400/40 transition-all duration-500"
             >
               <div className="relative w-32 h-32 mx-auto rounded-full overflow-hidden ring-4 ring-teal-400/30 group-hover:ring-teal-400/70 transition duration-500">
-                <img
+                <Image
                   src={org.img}
                   alt={org.name}
+                  width={128}
+                  height={128}
                   className="w-full h-full object-cover"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-zinc-700/40 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition"></div>
