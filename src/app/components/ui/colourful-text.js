@@ -5,7 +5,7 @@ import { motion } from "motion/react";
 export function ColourfulText({
   text
 }) {
-  const colors = [
+  const colors = React.useMemo(() => [
     "rgb(131, 179, 32)",
     "rgb(47, 195, 106)",
     "rgb(42, 169, 210)",
@@ -16,7 +16,7 @@ export function ColourfulText({
     "rgb(230, 64, 92)",
     "rgb(232, 98, 63)",
     "rgb(249, 129, 47)",
-  ];
+  ], []);
 
   const [currentColors, setCurrentColors] = React.useState(colors);
   const [count, setCount] = React.useState(0);

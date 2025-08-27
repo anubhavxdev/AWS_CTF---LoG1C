@@ -1,4 +1,5 @@
 import { CometCard } from "../components/ui/comet-card";
+import Image from "next/image";
 
 function MentorCard({ name, position, image }) {
   return (
@@ -11,14 +12,16 @@ function MentorCard({ name, position, image }) {
       >
         <div className="mx-2 flex-1">
           <div className="relative mt-2 aspect-[3/4] w-full">
-            <img
-              loading="lazy"
-              className="absolute inset-0 h-full w-full rounded-[16px] bg-black object-cover contrast-75"
+            <Image
+              fill
+              className="rounded-[16px] bg-black object-cover contrast-75"
               alt={`Profile of ${name}`}
               src={image}
               style={{
                 boxShadow: "rgba(0, 0, 0, 0.05) 0px 5px 6px 0px",
               }}
+              sizes="(max-width: 768px) 100vw, 320px"
+              priority={false}
             />
           </div>
         </div>
