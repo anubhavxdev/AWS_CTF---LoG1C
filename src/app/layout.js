@@ -4,6 +4,8 @@ import LandingPage from "../app/home/landing";
 import AboutTheEvent from "../app/about/about";
 import Organizer from "../app/organizers/organizer";
 import { DraggableCardDemo } from "./gallery/gallery";
+import { Mentor } from "./mentor/mentor";
+import { PowerThoughts } from "./PowerThoughts/power";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -28,8 +30,10 @@ export default function RootLayout({ children }) {
       >
         <LandingPage />
         <AboutTheEvent />
-        <Organizer />
+       
         <DraggableCardDemo />
+        <PowerThoughts />
+        <Mentor />
 
         {children}
       </body>
