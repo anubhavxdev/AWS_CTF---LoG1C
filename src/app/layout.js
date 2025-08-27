@@ -6,6 +6,9 @@ import Organizer from "../app/organizers/organizer";
 import { DraggableCardDemo } from "./gallery/gallery";
 import { Mentor } from "./mentor/mentor";
 import { PowerThoughts } from "./PowerThoughts/power";
+import {SparklesPreview} from "./footer/footer"
+
+
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -34,6 +37,7 @@ export default function RootLayout({ children }) {
         <DraggableCardDemo />
         <PowerThoughts />
         <Mentor />
+        <SparklesPreview />
 
         {children}
       </body>

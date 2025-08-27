@@ -4,7 +4,7 @@ function MentorCard({ name, position, image }) {
   return (
     <CometCard>
       <div
-        className="flex h-full w-80 flex-col items-stretch rounded-[16px] border-0 bg-[#1F2121] p-2 saturate-0 md:p-4"
+        className="flex h-full w-80 flex-col items-stretch rounded-[16px] border-0  p-2 saturate-0 md:p-4"
         style={{
           minHeight: "420px", // Ensures consistent height
         }}
@@ -13,7 +13,7 @@ function MentorCard({ name, position, image }) {
           <div className="relative mt-2 aspect-[3/4] w-full">
             <img
               loading="lazy"
-              className="absolute inset-0 h-full w-full rounded-[16px] bg-[#000000] object-cover contrast-75"
+              className="absolute inset-0 h-full w-full rounded-[16px] bg-black object-cover contrast-75"
               alt={`Profile of ${name}`}
               src={image}
               style={{

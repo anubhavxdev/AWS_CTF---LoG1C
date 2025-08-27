@@ -96,7 +96,7 @@ export default function Home() {
         AWS CTF
       </span>
       <div style={{ marginLeft: "auto", display: "flex", gap: "1rem" }}>
-        <motion.a
+        {/* <motion.a
           whileHover={{ scale: 1.1, backgroundColor: "#ff9900", color: "#fff", boxShadow: "0 4px 20px #ff990088" }}
           whileTap={{ scale: 0.95 }}
           href="#"
@@ -129,7 +129,7 @@ export default function Home() {
           }}
         >
           Sign Up
-        </motion.a>
+        </motion.a> */}
       </div>
     </nav>
 
