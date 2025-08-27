@@ -6,6 +6,8 @@ import Organizer from "../app/organizers/organizer";
 import { DraggableCardDemo } from "./gallery/gallery";
 import { Mentor } from "./mentor/mentor";
 import { PowerThoughts } from "./PowerThoughts/power";
+import { CommunityPartners } from "./community-partners/community-partners";
+import { Sponsors } from "./sponsors/sponsors";
 import {SparklesPreview} from "./footer/footer"
 
 
@@ -36,7 +38,9 @@ export default function RootLayout({ children }) {
        
         <DraggableCardDemo />
         <PowerThoughts />
+        <CommunityPartners />
         <Mentor />
+        <Sponsors />
         <SparklesPreview />
 
         {children}
