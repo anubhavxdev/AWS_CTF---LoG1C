@@ -15,7 +15,7 @@ export function PowerThoughts() {
       >
         The flag is in the most obvious place.{" "}
         <span className="text-blue-500">And yet,</span> somehow, we&apos;re all still looking in the 
-        <span className="text-blue-500">most complex, obscure locations</span>.
+        <span className="text-blue-500"> most complex, obscure locations</span>.
       </MaskContainer>
     </div>
   );
