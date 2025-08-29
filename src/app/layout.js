@@ -9,6 +9,7 @@ import { PowerThoughts } from "./PowerThoughts/power";
 import { CommunityPartners } from "./community-partners/community-partners";
 import { Sponsors } from "./sponsors/sponsors";
 import {SparklesPreview} from "./footer/footer"
+import { HeroScrollDemo } from "./Tablet-scroll/Hero-scroll";
 
 
 
@@ -41,6 +42,7 @@ export default function RootLayout({ children }) {
         <CommunityPartners />
         <Mentor />
         <Sponsors />
+        <HeroScrollDemo />
         <SparklesPreview />
 
         {children}
